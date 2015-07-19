@@ -54,7 +54,19 @@ class ViewController: UIViewController, GKImagePickerDelegate{
     
     @IBAction func done(sender: UIButton) {
         self.gkImagePicker.delegate = self
-        self.gkImagePicker.cropSize = CGSizeMake(320, 160)
+        
+        if UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Phone{
+            self.gkImagePicker.cropSize = image.frame.size
+
+        }else if  UI_USER_INTERFACE_IDIOM() == UIUserInterfaceIdiom.Pad {
+            self.gkImagePicker.cropSize = image.frame.size
+
+        }
+
+//        // if you want to take a resizable crop area
+//        self.gkImagePicker.resizeableCropArea = true
+        
+        
         self.presentViewController(self.gkImagePicker.imagePickerController, animated: true, completion: nil)
         
     }

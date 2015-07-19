@@ -2,6 +2,8 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7702" systemVersion="14B25" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7701"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
@@ -25,11 +27,20 @@
                                     <action selector="done:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Jbg-JO-eC0"/>
                                 </connections>
                             </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="x8w-TM-gkb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="x8w-TM-gkb">
                                 <rect key="frame" x="0.0" y="0.0" width="320" height="160"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="c1r-gS-XSx"/>
+                                </constraints>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="x8w-TM-gkb" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="-20" id="VcK-6L-Ceb"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="x8w-TM-gkb" secondAttribute="trailing" constant="-16" id="h9f-wg-76e"/>
+                            <constraint firstAttribute="width" secondItem="x8w-TM-gkb" secondAttribute="height" multiplier="2:1" id="ro2-Ax-14O"/>
+                            <constraint firstItem="x8w-TM-gkb" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leadingMargin" constant="-16" id="vZt-M5-bUq"/>
+                        </constraints>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
