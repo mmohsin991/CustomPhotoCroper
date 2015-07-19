@@ -1,0 +1,481 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		42E693501B5AC2BA0014257F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E6934F1B5AC2BA0014257F /* AppDelegate.swift */; };
+		42E693521B5AC2BA0014257F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E693511B5AC2BA0014257F /* ViewController.swift */; };
+		42E693551B5AC2BA0014257F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 42E693531B5AC2BA0014257F /* Main.storyboard */; };
+		42E693571B5AC2BA0014257F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 42E693561B5AC2BA0014257F /* Images.xcassets */; };
+		42E6935A1B5AC2BA0014257F /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 42E693581B5AC2BA0014257F /* LaunchScreen.xib */; };
+		42E693661B5AC2BA0014257F /* CustomPhotoCroperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 42E693651B5AC2BA0014257F /* CustomPhotoCroperTests.swift */; };
+		42E693811B5AC4BF0014257F /* GKImagePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E693761B5AC4BF0014257F /* GKImagePicker.m */; };
+		42E693821B5AC4BF0014257F /* GKImageCropViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E693781B5AC4BF0014257F /* GKImageCropViewController.m */; };
+		42E693831B5AC4BF0014257F /* GKImageCropView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E6937A1B5AC4BF0014257F /* GKImageCropView.m */; };
+		42E693841B5AC4BF0014257F /* GKImageCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E6937C1B5AC4BF0014257F /* GKImageCropOverlayView.m */; };
+		42E693851B5AC4BF0014257F /* GKCropBorderView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E6937E1B5AC4BF0014257F /* GKCropBorderView.m */; };
+		42E693861B5AC4BF0014257F /* GKResizeableCropOverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 42E693801B5AC4BF0014257F /* GKResizeableCropOverlayView.m */; };
+		42E6938C1B5ACA9E0014257F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 42E6938B1B5ACA9E0014257F /* Localizable.strings */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		42E693601B5AC2BA0014257F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 42E693421B5AC2BA0014257F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 42E693491B5AC2BA0014257F;
+			remoteInfo = CustomPhotoCroper;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		42E6934A1B5AC2BA0014257F /* CustomPhotoCroper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomPhotoCroper.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		42E6934E1B5AC2BA0014257F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42E6934F1B5AC2BA0014257F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		42E693511B5AC2BA0014257F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		42E693541B5AC2BA0014257F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		42E693561B5AC2BA0014257F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		42E693591B5AC2BA0014257F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		42E6935F1B5AC2BA0014257F /* CustomPhotoCroperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CustomPhotoCroperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		42E693641B5AC2BA0014257F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		42E693651B5AC2BA0014257F /* CustomPhotoCroperTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomPhotoCroperTests.swift; sourceTree = "<group>"; };
+		42E6936F1B5AC4310014257F /* CustomPhotoCroper-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "CustomPhotoCroper-Bridging-Header.h"; sourceTree = "<group>"; };
+		42E693751B5AC4BF0014257F /* GKImagePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImagePicker.h; sourceTree = "<group>"; };
+		42E693761B5AC4BF0014257F /* GKImagePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImagePicker.m; sourceTree = "<group>"; };
+		42E693771B5AC4BF0014257F /* GKImageCropViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImageCropViewController.h; sourceTree = "<group>"; };
+		42E693781B5AC4BF0014257F /* GKImageCropViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImageCropViewController.m; sourceTree = "<group>"; };
+		42E693791B5AC4BF0014257F /* GKImageCropView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImageCropView.h; sourceTree = "<group>"; };
+		42E6937A1B5AC4BF0014257F /* GKImageCropView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImageCropView.m; sourceTree = "<group>"; };
+		42E6937B1B5AC4BF0014257F /* GKImageCropOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKImageCropOverlayView.h; sourceTree = "<group>"; };
+		42E6937C1B5AC4BF0014257F /* GKImageCropOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKImageCropOverlayView.m; sourceTree = "<group>"; };
+		42E6937D1B5AC4BF0014257F /* GKCropBorderView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKCropBorderView.h; sourceTree = "<group>"; };
+		42E6937E1B5AC4BF0014257F /* GKCropBorderView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKCropBorderView.m; sourceTree = "<group>"; };
+		42E6937F1B5AC4BF0014257F /* GKResizeableCropOverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKResizeableCropOverlayView.h; sourceTree = "<group>"; };
+		42E693801B5AC4BF0014257F /* GKResizeableCropOverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKResizeableCropOverlayView.m; sourceTree = "<group>"; };
+		42E6938B1B5ACA9E0014257F /* Localizable.strings */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; path = Localizable.strings; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		42E693471B5AC2BA0014257F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42E6935C1B5AC2BA0014257F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		42E693411B5AC2BA0014257F = {
+			isa = PBXGroup;
+			children = (
+				42E6934C1B5AC2BA0014257F /* CustomPhotoCroper */,
+				42E693621B5AC2BA0014257F /* CustomPhotoCroperTests */,
+				42E6934B1B5AC2BA0014257F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		42E6934B1B5AC2BA0014257F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				42E6934A1B5AC2BA0014257F /* CustomPhotoCroper.app */,
+				42E6935F1B5AC2BA0014257F /* CustomPhotoCroperTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		42E6934C1B5AC2BA0014257F /* CustomPhotoCroper */ = {
+			isa = PBXGroup;
+			children = (
+				42E693741B5AC4AD0014257F /* croper */,
+				42E6934F1B5AC2BA0014257F /* AppDelegate.swift */,
+				42E693511B5AC2BA0014257F /* ViewController.swift */,
+				42E693531B5AC2BA0014257F /* Main.storyboard */,
+				42E693561B5AC2BA0014257F /* Images.xcassets */,
+				42E693581B5AC2BA0014257F /* LaunchScreen.xib */,
+				42E6934D1B5AC2BA0014257F /* Supporting Files */,
+				42E6936F1B5AC4310014257F /* CustomPhotoCroper-Bridging-Header.h */,
+			);
+			path = CustomPhotoCroper;
+			sourceTree = "<group>";
+		};
+		42E6934D1B5AC2BA0014257F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42E6938B1B5ACA9E0014257F /* Localizable.strings */,
+				42E6934E1B5AC2BA0014257F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42E693621B5AC2BA0014257F /* CustomPhotoCroperTests */ = {
+			isa = PBXGroup;
+			children = (
+				42E693651B5AC2BA0014257F /* CustomPhotoCroperTests.swift */,
+				42E693631B5AC2BA0014257F /* Supporting Files */,
+			);
+			path = CustomPhotoCroperTests;
+			sourceTree = "<group>";
+		};
+		42E693631B5AC2BA0014257F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				42E693641B5AC2BA0014257F /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		42E693741B5AC4AD0014257F /* croper */ = {
+			isa = PBXGroup;
+			children = (
+				42E693751B5AC4BF0014257F /* GKImagePicker.h */,
+				42E693761B5AC4BF0014257F /* GKImagePicker.m */,
+				42E693771B5AC4BF0014257F /* GKImageCropViewController.h */,
+				42E693781B5AC4BF0014257F /* GKImageCropViewController.m */,
+				42E693791B5AC4BF0014257F /* GKImageCropView.h */,
+				42E6937A1B5AC4BF0014257F /* GKImageCropView.m */,
+				42E6937B1B5AC4BF0014257F /* GKImageCropOverlayView.h */,
+				42E6937C1B5AC4BF0014257F /* GKImageCropOverlayView.m */,
+				42E6937D1B5AC4BF0014257F /* GKCropBorderView.h */,
+				42E6937E1B5AC4BF0014257F /* GKCropBorderView.m */,
+				42E6937F1B5AC4BF0014257F /* GKResizeableCropOverlayView.h */,
+				42E693801B5AC4BF0014257F /* GKResizeableCropOverlayView.m */,
+			);
+			name = croper;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		42E693491B5AC2BA0014257F /* CustomPhotoCroper */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42E693691B5AC2BA0014257F /* Build configuration list for PBXNativeTarget "CustomPhotoCroper" */;
+			buildPhases = (
+				42E693461B5AC2BA0014257F /* Sources */,
+				42E693471B5AC2BA0014257F /* Frameworks */,
+				42E693481B5AC2BA0014257F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomPhotoCroper;
+			productName = CustomPhotoCroper;
+			productReference = 42E6934A1B5AC2BA0014257F /* CustomPhotoCroper.app */;
+			productType = "com.apple.product-type.application";
+		};
+		42E6935E1B5AC2BA0014257F /* CustomPhotoCroperTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 42E6936C1B5AC2BA0014257F /* Build configuration list for PBXNativeTarget "CustomPhotoCroperTests" */;
+			buildPhases = (
+				42E6935B1B5AC2BA0014257F /* Sources */,
+				42E6935C1B5AC2BA0014257F /* Frameworks */,
+				42E6935D1B5AC2BA0014257F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				42E693611B5AC2BA0014257F /* PBXTargetDependency */,
+			);
+			name = CustomPhotoCroperTests;
+			productName = CustomPhotoCroperTests;
+			productReference = 42E6935F1B5AC2BA0014257F /* CustomPhotoCroperTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		42E693421B5AC2BA0014257F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = Mohsin;
+				TargetAttributes = {
+					42E693491B5AC2BA0014257F = {
+						CreatedOnToolsVersion = 6.3.1;
+					};
+					42E6935E1B5AC2BA0014257F = {
+						CreatedOnToolsVersion = 6.3.1;
+						TestTargetID = 42E693491B5AC2BA0014257F;
+					};
+				};
+			};
+			buildConfigurationList = 42E693451B5AC2BA0014257F /* Build configuration list for PBXProject "CustomPhotoCroper" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 42E693411B5AC2BA0014257F;
+			productRefGroup = 42E6934B1B5AC2BA0014257F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				42E693491B5AC2BA0014257F /* CustomPhotoCroper */,
+				42E6935E1B5AC2BA0014257F /* CustomPhotoCroperTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		42E693481B5AC2BA0014257F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42E693551B5AC2BA0014257F /* Main.storyboard in Resources */,
+				42E6938C1B5ACA9E0014257F /* Localizable.strings in Resources */,
+				42E6935A1B5AC2BA0014257F /* LaunchScreen.xib in Resources */,
+				42E693571B5AC2BA0014257F /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42E6935D1B5AC2BA0014257F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		42E693461B5AC2BA0014257F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42E693521B5AC2BA0014257F /* ViewController.swift in Sources */,
+				42E693861B5AC4BF0014257F /* GKResizeableCropOverlayView.m in Sources */,
+				42E693811B5AC4BF0014257F /* GKImagePicker.m in Sources */,
+				42E693851B5AC4BF0014257F /* GKCropBorderView.m in Sources */,
+				42E693821B5AC4BF0014257F /* GKImageCropViewController.m in Sources */,
+				42E693501B5AC2BA0014257F /* AppDelegate.swift in Sources */,
+				42E693831B5AC4BF0014257F /* GKImageCropView.m in Sources */,
+				42E693841B5AC4BF0014257F /* GKImageCropOverlayView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		42E6935B1B5AC2BA0014257F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				42E693661B5AC2BA0014257F /* CustomPhotoCroperTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		42E693611B5AC2BA0014257F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 42E693491B5AC2BA0014257F /* CustomPhotoCroper */;
+			targetProxy = 42E693601B5AC2BA0014257F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		42E693531B5AC2BA0014257F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42E693541B5AC2BA0014257F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		42E693581B5AC2BA0014257F /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				42E693591B5AC2BA0014257F /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		42E693671B5AC2BA0014257F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42E693681B5AC2BA0014257F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		42E6936A1B5AC2BA0014257F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = CustomPhotoCroper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomPhotoCroper/CustomPhotoCroper-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		42E6936B1B5AC2BA0014257F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				INFOPLIST_FILE = CustomPhotoCroper/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "CustomPhotoCroper/CustomPhotoCroper-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		42E6936D1B5AC2BA0014257F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CustomPhotoCroperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomPhotoCroper.app/CustomPhotoCroper";
+			};
+			name = Debug;
+		};
+		42E6936E1B5AC2BA0014257F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = CustomPhotoCroperTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CustomPhotoCroper.app/CustomPhotoCroper";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		42E693451B5AC2BA0014257F /* Build configuration list for PBXProject "CustomPhotoCroper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42E693671B5AC2BA0014257F /* Debug */,
+				42E693681B5AC2BA0014257F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42E693691B5AC2BA0014257F /* Build configuration list for PBXNativeTarget "CustomPhotoCroper" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42E6936A1B5AC2BA0014257F /* Debug */,
+				42E6936B1B5AC2BA0014257F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		42E6936C1B5AC2BA0014257F /* Build configuration list for PBXNativeTarget "CustomPhotoCroperTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				42E6936D1B5AC2BA0014257F /* Debug */,
+				42E6936E1B5AC2BA0014257F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 42E693421B5AC2BA0014257F /* Project object */;
+}
